@@ -1,0 +1,4 @@
+
+.vs/*
+src/HelloWorld/bin/*
+src/HelloWorld/obj/*
