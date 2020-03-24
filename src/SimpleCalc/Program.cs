@@ -7,45 +7,59 @@ namespace SimpleCalc
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Добро пожаловать в SimpleCalc");
             Sum();
             Subtraction();
             Multiplication();
-
         }
         static void Sum()
         {
             Console.WriteLine("Сложение");
-            Console.WriteLine("Введите первое число");
-            var userInput = Console.ReadLine();
-            Console.WriteLine("Введите второе число");
-            var userInput2 = Console.ReadLine();
-            var result = Convert.ToDouble(userInput) + Convert.ToDouble(userInput2);
+            var userInput = ConvertMethod("первое");
+            var userInput2 = ConvertMethod("второе");
+            var result = userInput + userInput2;
             Console.WriteLine("Сумма введеных вами чисел :" + " " + result);
+        }
+
+        static double ConvertMethod(string index)
+        {
+            Console.WriteLine($"Введите {index} число");
+            var userInput = Console.ReadLine();
+            return Convert.ToDouble(userInput);
         }
 
         static void Subtraction()
         {
             Console.WriteLine("Вычитание");
-            Console.WriteLine("Введите первое число");
-            var userInput = Console.ReadLine();
-            Console.WriteLine("Введите второе число");
-            var userInput2 = Console.ReadLine();
-            IFormatProvider formatter = new NumberFormatInfo { NumberDecimalSeparator = "." };
-            var result = double.Parse(userInput, formatter) - double.Parse(userInput2, formatter);
+            var userInput = ParseMethod("первое");
+            var userInput2 = ParseMethod("второе");
+            var result = userInput - userInput2;
             Console.WriteLine("Разность введеных вами чисел :" + " " + result);
         }
+
+        static double ParseMethod(string index)
+        {
+            Console.WriteLine($"Введите {index} число");
+            var userInput = Console.ReadLine();
+            IFormatProvider formatter = new NumberFormatInfo { NumberDecimalSeparator = "." };
+            return double.Parse(userInput, formatter);
+        }
+
         static void Multiplication()
         {
             Console.WriteLine("Умножение");
-            Console.WriteLine("Введите первое число");
+            var userInput = TryParseMethod("первое");
+            var userInput2 = TryParseMethod("второе");
+            var result = userInput * userInput2;
+            Console.WriteLine("Произведение введеных вами чисел:" + result);
+        }
+
+        static double TryParseMethod(string index)
+        {
+            Console.WriteLine($"Введите {index} число");
             var userInput = Console.ReadLine();
-            Console.WriteLine("Введите второе число");
-            var userInput2 = Console.ReadLine();
-            var result1 = double.TryParse(userInput, out double number);
-            var result2 = double.TryParse(userInput2, out double number2);
-            Console.WriteLine("Произведение введеных вами чисел:" + number * number2);
+            double.TryParse(userInput, out double number);
+            return number;
         }
     }
 
