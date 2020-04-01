@@ -8,7 +8,7 @@ namespace CalendarHandler_v2
         static void Main(string[] args)
         {
             Dictionary<DateTime, string> dates = new Dictionary<DateTime, string>();
-            while (true)
+            do
             {
                 Console.WriteLine("Введите дату");
                 var userInput = Console.ReadLine();
@@ -31,7 +31,7 @@ namespace CalendarHandler_v2
                 {
                     Console.WriteLine($"Возникло исключение {ex.Message}");
                 }
-            }
+            } while (Console.ReadKey().Key != ConsoleKey.Escape);
         }
     }
 }
