@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SportingGoodsStore
 {
-    class FitnessMat:Good
+    class FitnessMat : Good
     {
         public string Color { get; set; }
     }

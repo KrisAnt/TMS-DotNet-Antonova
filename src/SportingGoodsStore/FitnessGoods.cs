@@ -37,12 +37,12 @@ namespace SportingGoodsStore
             var colorOfTheGood = Console.ReadLine();
             var good = new FitnessMat
             {
-
                 Description = nameOfTheGood,
                 Price = priceOfTheGood,
                 Color = colorOfTheGood,
                 Count = quantityOfTheGood
             };
+            goods.Add(good);
         }
         public void RemoveDumbbell()
         {
@@ -73,6 +73,7 @@ namespace SportingGoodsStore
                 Console.WriteLine(" 2. Удалить гантелю из списка");
                 Console.WriteLine(" 3. Добавить коврик для фитнеса");
                 Console.WriteLine(" 4. Удалить коврик для фитнеса");
+                Console.WriteLine(" 5. Просмотреть все существующие товары");
                 userAnswer = Console.ReadLine();
                 switch (userAnswer)
                 {
@@ -96,6 +97,11 @@ namespace SportingGoodsStore
                             RemoveFitnessMat();
                             break;
                         }
+                    case "5":
+                        {
+                            DisplayAllGoods();
+                            break;
+                        }
                     case "0":
                         {
                             break;
@@ -106,14 +112,8 @@ namespace SportingGoodsStore
                             Console.WriteLine("Неправильный ввод");
                             break;
                         }
-
                 }
-
             } while (userAnswer != "0");
         }
-       
-     
- 
-        
     }
 }

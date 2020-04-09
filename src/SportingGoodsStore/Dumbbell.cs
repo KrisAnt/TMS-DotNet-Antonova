@@ -7,6 +7,5 @@ namespace SportingGoodsStore
     public class Dumbbell : Good
     {
         public string Weight { get; set; }
-
     }
 }

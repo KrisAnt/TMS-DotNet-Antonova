@@ -9,7 +9,6 @@ namespace SportingGoodsStore
             Console.WriteLine();
             Shop shop = new Shop();
             shop.Run();
-
         }
     }
 }

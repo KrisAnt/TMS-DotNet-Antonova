@@ -10,5 +10,9 @@ namespace SportingGoodsStore
         public string Price { get; set; }
         public string Count { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Description}";
+        }
     }
 }

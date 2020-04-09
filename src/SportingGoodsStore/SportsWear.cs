@@ -27,6 +27,7 @@ namespace SportingGoodsStore
                 Count = quantityOfTheGood,
                 Size = sizeOfTheGood
             };
+            goods.Add(good);
         }
         public void RemoveSportSuit()
         {
@@ -46,6 +47,7 @@ namespace SportingGoodsStore
                 Console.WriteLine("Выберите действие");
                 Console.WriteLine(" 1. Добавить спортивный костюм");
                 Console.WriteLine(" 2. Удалить спортивный костюм");
+                Console.WriteLine(" 3. Просмотреть все существующие товары");
                 userAnswer = Console.ReadLine();
                 switch (userAnswer)
                 {
@@ -61,6 +63,7 @@ namespace SportingGoodsStore
                         }
                     case "3":
                         {
+                            DisplayAllGoods();
                             break;
                         }
                     case "4":
