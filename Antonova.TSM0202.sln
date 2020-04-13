@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalendarHandler", "src\Cale
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalendarHandler_v2", "src\CalendarHandler_v2\CalendarHandler_v2.csproj", "{874D8F7A-CF29-4997-BA86-BB4926D8C97D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportingGoodsStore", "src\SportingGoodsStore\SportingGoodsStore.csproj", "{7F5594C5-7EAE-4FEA-B0F6-3BE0520D73E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportingGoodsStore", "src\SportingGoodsStore\SportingGoodsStore.csproj", "{7F5594C5-7EAE-4FEA-B0F6-3BE0520D73E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATM Management", "ATM Management\ATM Management.csproj", "{9658E2BC-F99A-47CB-A8C2-EA65BC9A3D84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7F5594C5-7EAE-4FEA-B0F6-3BE0520D73E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F5594C5-7EAE-4FEA-B0F6-3BE0520D73E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F5594C5-7EAE-4FEA-B0F6-3BE0520D73E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9658E2BC-F99A-47CB-A8C2-EA65BC9A3D84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9658E2BC-F99A-47CB-A8C2-EA65BC9A3D84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9658E2BC-F99A-47CB-A8C2-EA65BC9A3D84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9658E2BC-F99A-47CB-A8C2-EA65BC9A3D84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
