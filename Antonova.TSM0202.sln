@@ -15,7 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportingGoodsStore", "src\S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ATM Management", "ATM Management\ATM Management.csproj", "{9658E2BC-F99A-47CB-A8C2-EA65BC9A3D84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashDeskApp", "src\CashDeskApp\CashDeskApp.csproj", "{DEE290DB-F842-491A-9B7C-ADC058CA630A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashDeskApp", "src\CashDeskApp\CashDeskApp.csproj", "{DEE290DB-F842-491A-9B7C-ADC058CA630A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSend", "src\EmailSend\EmailSend.csproj", "{0B78CCF1-F559-4F62-A3CD-7FDC7555A3B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendLib", "src\EmailSendLib\EmailSendLib.csproj", "{02DEFFC1-CBE7-4395-8F0F-F1193FF7A419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSendLib.Tests", "src\EmailSendLib.Tests\EmailSendLib.Tests.csproj", "{1BF3C843-5186-43F3-9630-2268A2531E7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{DEE290DB-F842-491A-9B7C-ADC058CA630A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEE290DB-F842-491A-9B7C-ADC058CA630A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEE290DB-F842-491A-9B7C-ADC058CA630A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B78CCF1-F559-4F62-A3CD-7FDC7555A3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B78CCF1-F559-4F62-A3CD-7FDC7555A3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B78CCF1-F559-4F62-A3CD-7FDC7555A3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B78CCF1-F559-4F62-A3CD-7FDC7555A3B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02DEFFC1-CBE7-4395-8F0F-F1193FF7A419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DEFFC1-CBE7-4395-8F0F-F1193FF7A419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DEFFC1-CBE7-4395-8F0F-F1193FF7A419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DEFFC1-CBE7-4395-8F0F-F1193FF7A419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BF3C843-5186-43F3-9630-2268A2531E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF3C843-5186-43F3-9630-2268A2531E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF3C843-5186-43F3-9630-2268A2531E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF3C843-5186-43F3-9630-2268A2531E7F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
